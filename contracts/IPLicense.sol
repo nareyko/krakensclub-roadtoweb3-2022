@@ -49,11 +49,11 @@ contract IPLicense is IIPLicense {
 
     string private constant _comm1 = 'b. Commercial Use. Subject to your continued compliance with'
     ' the terms of this License, Creator grants you ';
-    string private constant _comm2 = 'non-transferable license to use, copy, and display'
+    string private constant _comm2 = ' non-transferable license to use, copy, and display'
     ' the Content for your Purchased NFTs for the purpose of commercializing your own'
     ' merchandise that includes, contains, or consists of the Content for your Purchased NFTs'
     ' ("Commercial Use")';
-    string private constant _comm3 = ' provided that such Commercial Use does not result in you'
+    string private constant _comm3 = ', provided that such Commercial Use does not result in you'
     ' earning more than ';
     string private constant _comm4 = ' For the sake of clarity, nothing in this Section 3.b'
     ' will be deemed to restrict you from (i) owning or operating a marketplace that permits'
@@ -114,7 +114,8 @@ contract IPLicense is IIPLicense {
 
     string private constant _rest9 = 'The restriction in Section 4 will survive the expiration or termination of this License.\n\n';
 
-    string private constant _terms1 = 'The license granted in Section 3 above applies only to the'
+    string private constant _terms1 = '5. Terms of License.\n\n'
+    'The license granted in Section 3 above applies only to the'
     ' extent that you continue to Own the applicable Purchased NFT. If at any time you sell, trade,'
     ' donate, give away, transfer, or otherwise dispose of your Purchased NFT for any reason,'
     ' the license granted in Section 3 will immediately expire with respect to those NFTs without'
@@ -123,7 +124,7 @@ contract IPLicense is IIPLicense {
 
     string private constant _terms2 = 'If you exceed the Limit, you will be in breach of this'
     ' License, and must send an email to Creator at ';
-    string private constant _terms3 = 'within fifteen (15) days, with the phrase'
+    string private constant _terms3 = ' within fifteen (15) days, with the phrase'
     ' "NFT License - Commercial Use" in the subject line, requesting a discussion with Creator'
     ' regarding entering into a broader license agreement or obtaining an exemption'
     ' (which may be granted or withheld in Creator''s sole and absolute discretion).\n\n';
@@ -182,7 +183,7 @@ contract IPLicense is IIPLicense {
             _rest4,
             _iscommercial ? _rest5: ';\n\n',
             _rest6, _rest7,
-            _isunlimited ? _rest8 : '',
+            _iscommercial ? _rest8 : '',
             _rest9
         );
 
